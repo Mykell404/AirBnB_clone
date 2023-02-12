@@ -33,7 +33,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """Return the dictionary of the BaseModel instance.
+        """Return the dictionary of the BaseModel instance..
         Includes the key/value pair __class__ representing
         the class name of the object.
         """
@@ -42,6 +42,7 @@ class BaseModel:
         rdict["updated_at"] = self.updated_at.isoformat()
         rdict["__class__"] = self.__class__.__name__
         return rdict
+
 
     def __str__(self):
         """Return the print/str representation of the BaseModel instance."""
